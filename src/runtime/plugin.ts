@@ -126,8 +126,9 @@ export default defineNuxtPlugin(async () => {
       if (callback !== undefined) {
         callback(response)
         return
+      } else {
+        window.location.replace(config.redirects.home)
       }
-      window.location.replace(config.redirects.home)
     } catch (error: any) {
       throw error.data
     }
@@ -141,9 +142,9 @@ export default defineNuxtPlugin(async () => {
       if (callback !== undefined) {
         callback(response)
         return
+      } else {
+        window.location.replace(config.redirects.logout)
       }
-
-      window.location.replace(config.redirects.logout)
     } catch (error) {
       console.log(error)
     } finally {

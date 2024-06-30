@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.2.0",
-    "ofetch": "^1.0.0"
+    "ofetch": "^1.0.0",
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
@@ -39,11 +40,7 @@
     "prettier": "^2.7.1",
     "tailwindcss": "^3.2.6"
   },
-  "description": "This is a simple package for interating Laravel Sanctum auth with Nuxt3. This package is in developement and for now works only in SPA mode (no ssr yet).",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dystcz/nuxt-sanctum-auth.git"
-  },
+  "description": "Laravel + Nuxt 3 Auth",
   "keywords": [
     "nuxt3",
     "typescript",
@@ -52,9 +49,5 @@
     "auth",
     "nuxt"
   ],
-  "author": "Paul Cross <me@paulcross.cz> (https://paulcross.cz/)",
-  "bugs": {
-    "url": "https://github.com/dystcz/nuxt-sanctum-auth/issues"
-  },
-  "homepage": "https://github.com/dystcz/nuxt-sanctum-auth#readme"
+  "author": "Arafat Islam khairul"
 }
