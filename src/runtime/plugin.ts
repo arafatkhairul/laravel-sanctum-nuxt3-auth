@@ -20,14 +20,19 @@ export default defineNuxtPlugin(async () => {
 
   const config: ModuleOptions = useRuntimeConfig().public.nuxtSanctumAuth
 
-  addRouteMiddleware('auth', async () => {
+  addRouteMiddleware('auth', async (context) => {
     if (config.token) {
       getToken()
     }
     await getUser()
 
+
     if (auth.value.loggedIn === false) {
-      return config.redirects.login
+      if (context.meta.redirectRoute !== undefined) {
+        return context.meta.redirectRoute;
+      } else {
+        return config.redirects.login
+      }
     }
   })
 
