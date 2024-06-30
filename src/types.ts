@@ -1,4 +1,4 @@
-import { FetchOptions, FetchRequest } from 'ofetch'
+import type { FetchOptions, FetchRequest } from 'ofetch'
 
 export interface Endpoints {
   csrf: string
@@ -57,7 +57,7 @@ declare module 'vue/types/vue' {
 
 // Nuxt Bridge & Nuxt 3
 declare module '#app' {
-  interface NuxtApp extends PluginInjection {}
+  interface NuxtApp extends PluginInjection { }
 }
 
 interface PluginInjection {
@@ -67,5 +67,5 @@ interface PluginInjection {
 }
 
 declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties extends PluginInjection {}
+  interface ComponentCustomProperties extends PluginInjection { }
 }

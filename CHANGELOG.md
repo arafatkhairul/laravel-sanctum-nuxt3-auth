@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.5.2
+
 ## v0.4.7
 
 - fix runtime config error, now using public runtime config

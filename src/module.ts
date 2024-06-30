@@ -4,7 +4,7 @@ import {
   addPlugin,
   addImports
 } from '@nuxt/kit'
-import { ModuleOptions } from './types'
+import type { ModuleOptions } from './types'
 
 const defaults: ModuleOptions = {
   token: false,
@@ -29,8 +29,8 @@ const defaults: ModuleOptions = {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-sanctum-auth',
-    configKey: 'nuxtSanctumAuth'
+    name: 'nuxt3-sanctum-auth',
+    configKey: 'nuxt3SanctumAuth'
   },
   defaults,
   setup(options, nuxt) {
